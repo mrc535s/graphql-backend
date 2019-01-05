@@ -23,7 +23,7 @@ export const userResolvers = {
         }
     },
     User: {
-        github: async (_source, { dataSources }) => {
+        github: async (_source, {id}, { dataSources }) => {
             try {
                 const gitHubUserName = _source.gitHubUserName;
                 if (gitHubUserName) {
