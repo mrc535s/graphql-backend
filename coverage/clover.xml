@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1546638564682" clover="3.2.0">
+  <project timestamp="1546638564683" name="All files">
+    <metrics statements="55" coveredstatements="48" conditionals="18" coveredconditionals="15" methods="8" coveredmethods="5" elements="81" coveredelements="68" complexity="0" loc="55" ncloc="55" packages="2" files="5" classes="5">
+      <package name="job">
+        <metrics statements="17" coveredstatements="16" conditionals="5" coveredconditionals="5" methods="0" coveredmethods="0"/>
+        <file name="job.model.js" path="/Users/mcarney/projects/graphql/backend/src/job/job.model.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="35" count="2" type="stmt"/>
+        </file>
+        <file name="job.resolvers.js" path="/Users/mcarney/projects/graphql/backend/src/job/job.resolvers.js">
+          <metrics statements="15" coveredstatements="14" conditionals="5" coveredconditionals="5" methods="0" coveredmethods="0"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="29" count="2" type="stmt"/>
+          <line num="30" count="2" type="cond" truecount="4" falsecount="0"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="user">
+        <metrics statements="38" coveredstatements="32" conditionals="13" coveredconditionals="10" methods="8" coveredmethods="5"/>
+        <file name="user.github.js" path="/Users/mcarney/projects/graphql/backend/src/user/user.github.js">
+          <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="16" count="2" type="cond" truecount="4" falsecount="0"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+        </file>
+        <file name="user.model.js" path="/Users/mcarney/projects/graphql/backend/src/user/user.model.js">
+          <metrics statements="15" coveredstatements="9" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="1"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="37" count="3" type="stmt"/>
+          <line num="52" count="3" type="stmt"/>
+          <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="71" count="3" type="stmt"/>
+          <line num="74" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="75" count="1" type="stmt"/>
+          <line num="77" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="78" count="1" type="stmt"/>
+          <line num="80" count="1" type="stmt"/>
+        </file>
+        <file name="user.resolvers.js" path="/Users/mcarney/projects/graphql/backend/src/user/user.resolvers.js">
+          <metrics statements="16" coveredstatements="16" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="27" count="3" type="stmt"/>
+          <line num="28" count="3" type="stmt"/>
+          <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="30" count="2" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

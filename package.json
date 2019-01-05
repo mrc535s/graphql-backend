@@ -1,0 +1,46 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "nodemon --watch src --exec babel-node src/index.js",
+    "build": "babel src -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.2.1",
+    "apollo-server": "^2.3.1",
+    "apollo-server-express": "^2.3.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "graphql-tools": "^4.0.3",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "eslint": "^5.12.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^23.6.0",
+    "mockingoose": "^2.11.0",
+    "nodemon": "^1.18.9",
+    "regenerator-runtime": "^0.13.1"
+  }
+}
