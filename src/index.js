@@ -1,4 +1,4 @@
-import {ApolloServer} from 'apollo-server-express';
+import {ApolloServer} from 'apollo-server';
 import express from 'express';
 import schema from './schema';
 /// This feels dirty being at the top level.
@@ -25,9 +25,13 @@ const server = new ApolloServer({
 // console.log(`🚀  Server ready at ${url}`);
 // });
 
-const app = express();
-server.applyMiddleware({ app });
+// const app = express();
+// server.applyMiddleware({ app });
 
-app.listen({ port: process.env.PORT || 4000 }, () =>
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-);
+// app.listen({ port: process.env.PORT || 4000 }, () =>
+//   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+// );
+
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+    console.log(`🚀 Server ready at ${url}`);
+});
