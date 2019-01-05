@@ -1,4 +1,4 @@
-import {ApolloServer} from 'apollo-server';
+import {ApolloServer} from 'apollo-server-express';
 import express from 'express';
 import schema from './schema';
 /// This feels dirty being at the top level.
@@ -12,6 +12,10 @@ mongoose.connect('mongodb+srv://jwipe:Just4jwipe@cluster0-yqjvd.mongodb.net/test
 // responsible for fetching the data for those types.
 const server = new ApolloServer({
     schema,
+    debug: true,
+    tracing: true,
+    introspection: true,
+    playground: true,
     dataSources: () => {
         return {
             gitHubUsersAPI: new GitHubUsersAPI()
@@ -25,13 +29,9 @@ const server = new ApolloServer({
 // console.log(`🚀  Server ready at ${url}`);
 // });
 
-// const app = express();
-// server.applyMiddleware({ app });
+const app = express();
+server.applyMiddleware({ app });
 
-// app.listen({ port: process.env.PORT || 4000 }, () =>
-//   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-// );
-
-server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`);
-});
+app.listen({ port: process.env.PORT || 4000 }, () =>
+  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+);
