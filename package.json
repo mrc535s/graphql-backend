@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "start": "nodemon --watch src --exec babel-node src/index.js",
+    "dev": "nodemon --watch src --exec babel-node src/index.js",
+    "clean:dist": "rm -rf dist",
+    "start": "npm run clean:dist && npm run build && node dist/index.js",
     "build": "babel src -d dist"
   },
   "author": "",
