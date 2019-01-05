@@ -13,5 +13,5 @@ const resolvers = merge(jobResolvers, userResolvers);
 const typeDefs = [rootSchema, jobsSchema, userSchema];
 
 export default makeExecutableSchema({
-  typeDefs, resolvers
+    typeDefs, resolvers
 });
