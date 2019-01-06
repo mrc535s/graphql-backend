@@ -5,8 +5,6 @@
   "env": {
     "NPM_CONFIG_PRODUCTION": {
       "required": false
-    },
-    "NODE_ENV": "development"
   },
   "formation": {
     "web": {
