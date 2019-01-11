@@ -10,9 +10,9 @@
     const MOCK_ERROR_MSG = 'ERROR';
     const MOCK_ERROR = new Error(MOCK_ERROR_MSG);
     const thingMockData = {
-        maxPay: 10,
-        minPay: 1,
-        company: 'Some Company',
+        status: 'In Progress',
+        description: 'New Thing Description',
+        title: 'New Thing',
         userId: 1
     };
     const filterObj = {};
@@ -52,14 +52,14 @@
             firstName: 'Mike'
         }
         User.findById = jest.fn().mockResolvedValue(mockUser);
-        const user = await thingResolvers.thing.user(thingMockData);
+        const user = await thingResolvers.Thing.user(thingMockData);
         expect(user).toEqual(mockUser);
         
     });
 
     it('should return null if thing does not have userid', async () => {
         const {userId, ...newthingMockData } = thingMockData;
-        const user = await thingResolvers.thing.user(newthingMockData);
+        const user = await thingResolvers.Thing.user(newthingMockData);
         expect(user).toBeNull();
     });
  });
